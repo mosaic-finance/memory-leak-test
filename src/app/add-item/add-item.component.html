@@ -1,0 +1,17 @@
+<div class="content-area">
+  <h2>Add a new item</h2>
+  <form [formGroup]="form" id="add-item-form">
+    <mfc-field-wrapper>
+      <mfc-label>Name</mfc-label>
+      <mfc-text-input formControlName="name"></mfc-text-input>
+    </mfc-field-wrapper>
+    <mfc-field-wrapper>
+      <mfc-label>Cost</mfc-label>
+      <mfc-numeric-input formControlName="cost"></mfc-numeric-input>
+    </mfc-field-wrapper>
+    <div class="button-selector">
+      <mfc-button label="Add" goal="Primary" (click)="addItem()"></mfc-button>
+      <mfc-button label="Back" routerLink=""></mfc-button>
+    </div>
+  </form>
+</div>

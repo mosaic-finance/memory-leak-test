@@ -1,0 +1,18 @@
+html, body {
+  margin: 0;
+  font-size: 16px;
+}
+
+.content-area {
+  margin: auto;
+  width: 75%;
+}
+
+.button-selector {
+  display: flex;
+  justify-content: space-between;
+}
+
+.centered-content label {
+  align-items: center;
+}

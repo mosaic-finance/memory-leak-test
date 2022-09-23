@@ -1,0 +1,17 @@
+<div class="content-area">
+  <h2>Edit an existing item</h2>
+  <form [formGroup]="form">
+    <mfc-field-wrapper>
+      <mfc-label>Name</mfc-label>
+      <mfc-text-input formControlName="name" disabled></mfc-text-input>
+    </mfc-field-wrapper>
+    <mfc-field-wrapper>
+      <mfc-label>Cost</mfc-label>
+      <mfc-numeric-input formControlName="cost"></mfc-numeric-input>
+    </mfc-field-wrapper>
+    <div class="button-selector">
+      <mfc-button label="Edit" goal="Primary" (click)="editItem()"></mfc-button>
+      <mfc-button label="Back" routerLink=""></mfc-button>
+    </div>
+  </form>
+</div>

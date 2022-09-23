@@ -1,0 +1,7 @@
+<li>
+  <div>
+    <span>{{item.name}}</span>
+    <span>${{item.cost}}</span>
+  </div>
+  <mfc-button icon="Rename" label="edit" [routerLink]="'./edit/' + item.name"></mfc-button>
+</li>
